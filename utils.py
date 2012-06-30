@@ -38,6 +38,11 @@ def gen_primes():
 def gen_fib():
     a, b = 0, 1
 
-    while :
+    while True:
         yield a
         a, b = b, a + b
+
+# Simple string palindrome checker which does not account for punctation or other things outside of
+# basic alphanumeric characters.
+def is_palindrome(str):
+    return (str == str[::-1])
